@@ -10,6 +10,8 @@ body{
     color:#5F5652;
 }
 
+/* HEADER */
+
 header{
     display:flex;
     justify-content:space-between;
@@ -28,7 +30,14 @@ nav a{
     color:#5F5652;
     margin-left:25px;
     font-size:16px;
+    transition:0.3s;
 }
+
+nav a:hover{
+    color:#D9A5B3;
+}
+
+/* HERO */
 
 .hero{
     height:80vh;
@@ -36,25 +45,29 @@ nav a{
     justify-content:center;
     align-items:center;
     text-align:center;
+
     background:linear-gradient(
     to bottom,
     #F6E8EC,
     #DDE8D5
     );
+
     padding:20px;
 }
 
 .hero h1{
-    font-size:70px;
+    font-size:72px;
     margin-bottom:20px;
 }
 
 .slogan{
     font-size:22px;
     max-width:700px;
-    line-height:1.6;
+    line-height:1.7;
     margin-bottom:30px;
 }
+
+/* BUTTON */
 
 button{
     padding:15px 35px;
@@ -71,13 +84,15 @@ button:hover{
     background:#D9A5B3;
 }
 
+/* CATEGORIES */
+
 .categories{
     padding:80px 60px;
     text-align:center;
 }
 
 .categories h2{
-    font-size:40px;
+    font-size:42px;
     margin-bottom:50px;
 }
 
@@ -94,11 +109,18 @@ button:hover{
     padding:35px;
     border-radius:25px;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
 }
 
 .category-card h3{
     margin-bottom:15px;
 }
+
+/* BESTSELLER */
 
 .bestseller{
     padding:80px 60px;
@@ -107,7 +129,7 @@ button:hover{
 
 .bestseller h2{
     text-align:center;
-    font-size:40px;
+    font-size:42px;
     margin-bottom:40px;
 }
 
@@ -117,9 +139,11 @@ button:hover{
     background:white;
     border-radius:30px;
     padding:40px;
+
     display:flex;
     align-items:center;
     gap:40px;
+
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
@@ -127,13 +151,57 @@ button:hover{
     font-size:90px;
 }
 
-.about{
+/* REFILL */
+
+.refill{
     padding:80px 60px;
     text-align:center;
 }
 
+.refill h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.refill-text{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+    margin-bottom:50px;
+}
+
+.refill-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.step{
+    background:white;
+    width:260px;
+    padding:30px;
+    border-radius:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.step h3{
+    margin-bottom:15px;
+    color:#D9A5B3;
+}
+
+/* ABOUT */
+
+.about{
+    padding:80px 60px;
+    text-align:center;
+    background:#F6E8EC;
+}
+
 .about h2{
-    font-size:40px;
+    font-size:42px;
     margin-bottom:30px;
 }
 
@@ -143,6 +211,8 @@ button:hover{
     line-height:1.8;
     font-size:18px;
 }
+
+/* FOOTER */
 
 footer{
     background:#DDE8D5;
